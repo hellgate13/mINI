@@ -680,8 +680,8 @@ namespace mINI
 	public:
 		bool prettyPrint = false;
 
-		INIWriter(std::string const& filename)
-		: filename(filename)
+		INIWriter(std::string const& _filename)
+		: filename(_filename)
 		{
 		}
 		~INIWriter() { }
@@ -749,8 +749,8 @@ namespace mINI
 		std::string filename;
 
 	public:
-		INIFile(std::string const& filename)
-		: filename(filename)
+		INIFile(std::string const& _filename)
+		: filename(_filename)
 		{ }
 
 		~INIFile() { }
